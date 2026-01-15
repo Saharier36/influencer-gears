@@ -11,12 +11,28 @@
   display: flex;
 }
 
+.btn {
+  padding: 10px 24px;
+  color: #ffffff;
+  background-color: #e02c6d;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #fe4187;
+}
+
 /* header styles */
 
 /* navbar styles */
 
-.navbar {
+.navbar,
+.banner {
   justify-content: space-between;
+  align-items: center;
   max-width: 1220px;
   margin: 30px auto;
 }
@@ -24,6 +40,7 @@
 .brand {
   font-size: 1.5rem;
   font-weight: 700;
+  color: #3a3a3a;
 }
 
 .nav-links {
@@ -33,11 +50,32 @@
 
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: #3a3a3a;
   font-weight: 600;
   font-size: 1rem;
 }
 
 .nav-link:hover {
   color: #e02c6d;
+}
+
+/* banner styles */
+.banner-title {
+  width: 582px;
+  color: rgba(58, 58, 58, 1);
+  font-size: 3.25rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.banner-description {
+  width: 505px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: rgba(58, 58, 58, 1);
+}
+
+.banner-img {
+  background-image: url(./images/Circle\ design.svg);
+  width: 475px;
+  height: 475px;
 }
