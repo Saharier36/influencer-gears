@@ -153,3 +153,23 @@ hr {
 .see-more:hover {
   color: #fe4187;
 }
+
+/* featured styles */
+.featured {
+  max-width: 1110px;
+  margin: 100px auto;
+  gap: 96px;
+}
+.featured-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.featured-description {
+  color: rgba(108, 108, 108, 1);
+  font-weight: 700;
+  width: 501px;
+}
+.featured-container button {
+  border-radius: 0;
+}
