@@ -173,3 +173,42 @@ hr {
 .featured-container button {
   border-radius: 0;
 }
+
+/* footer styls */
+
+.footer-container {
+  background-color: #0a0826;
+}
+
+.footer-content {
+  max-width: 262px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-title {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 50px;
+}
+
+.footer-description {
+  color: rgba(255, 255, 255, 1);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.social-logo {
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.fa-brands {
+  padding: 10px;
+  background-color: #23223d;
+  border-radius: 100%;
+  margin-right: 20px;
+  color: #ffffff;
+}
