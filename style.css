@@ -61,14 +61,15 @@
 
 /* banner styles */
 .banner-title {
-  width: 582px;
+  max-width: 582px;
+  width: 100%;
   color: rgba(58, 58, 58, 1);
   font-size: 3.25rem;
   font-weight: 700;
   margin-bottom: 16px;
 }
 .banner-description {
-  width: 505px;
+  max-width: 505px;
   margin-bottom: 16px;
   font-weight: 600;
   color: rgba(58, 58, 58, 1);
@@ -111,13 +112,15 @@ hr {
 }
 
 .card-content {
+  max-width: 329px;
   border-radius: 5px;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
   background: rgba(255, 255, 255, 1);
 }
 
 .card-img {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   height: 256px;
   margin: 17px auto;
   display: block;
@@ -168,7 +171,8 @@ hr {
 .featured-description {
   color: rgba(108, 108, 108, 1);
   font-weight: 700;
-  width: 501px;
+  max-width: 501px;
+  width: 100%;
 }
 .featured-container button {
   border-radius: 0;
@@ -209,6 +213,48 @@ hr {
   padding: 10px;
   background-color: #23223d;
   border-radius: 100%;
-  margin-right: 20px;
+  margin: 10px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .banner,
+  .featured {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner-container {
+    order: 2;
+    align-items: center;
+  }
+
+  .banner-img {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .sponsor {
+    flex-wrap: wrap;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .card-content {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .featured {
+    gap: 30px;
+  }
+  .featured-description {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 }
